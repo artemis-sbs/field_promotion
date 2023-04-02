@@ -34,6 +34,11 @@ class SiegeStory( PyMastStory,
 
     def start_server(self):
         sbs.create_new_sim()
+        # Let the data be seen?
+        sbs.resume_sim()
+        self.delay(1)
+        sbs.pause_sim()
+
         sim = self.sim
         player_ship = PlayerShip().spawn(sim,1200,0,200, "Artemis", "tsn", "tsn_battle_cruiser")
         faces.set_face(player_ship.id, faces.random_terran())
