@@ -180,5 +180,5 @@ A look out side!
         self.gui_section("area: 85, 85,100,100-30px")
         self.gui_console_widget("text_waterfall")
         self.helm_show_hint("area: 65, 60, 100, 85;", """
-Messages may show up hear.
+Messages may show up here.
 """, True)
